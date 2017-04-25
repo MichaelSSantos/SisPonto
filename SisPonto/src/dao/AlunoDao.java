@@ -5,7 +5,7 @@ import java.util.List;
 
 import entity.Aluno;
 
-public class AlunoDao implements GenericDao<Aluno> {
+public class AlunoDao implements Dao<Aluno> {
 
 	private List<Aluno> alunos = new ArrayList<>();
 	
@@ -14,5 +14,9 @@ public class AlunoDao implements GenericDao<Aluno> {
 		alunos.add(aluno);
 	}
 	
+	@Override
+	public List<Aluno> obterTodos() {
+		return alunos;
+	}
 
 }

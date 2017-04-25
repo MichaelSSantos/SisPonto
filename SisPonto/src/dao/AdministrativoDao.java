@@ -5,7 +5,7 @@ import java.util.List;
 
 import entity.Funcionario;
 
-public class AdministrativoDao implements GenericDao<Funcionario> {
+public class AdministrativoDao implements Dao<Funcionario> {
 
 	private List<Funcionario> administrativos = new ArrayList<>();
 	
@@ -13,5 +13,10 @@ public class AdministrativoDao implements GenericDao<Funcionario> {
 	public void cadastrar(Funcionario funcionario) {
 		administrativos.add(funcionario);
 	}
-
+	
+	@Override
+	public List<Funcionario> obterTodos() {
+		return administrativos;
+	}
+	
 }
