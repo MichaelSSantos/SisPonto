@@ -21,7 +21,6 @@ public class SisPonto {
 			System.out.println("[3] Cadastrar novo professor");
 			System.out.println("[4] Cadastrar novo administrativo");
 			System.out.println("[0] Sair");
-
 			System.out.print("Opção: ");
 			opcaoMenu = in.nextLine();
 

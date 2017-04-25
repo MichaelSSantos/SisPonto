@@ -9,8 +9,6 @@ import entity.Professor;
 
 public class CadastroProfessorService implements SisPontoService {
 	
-	private Dao<Professor> professorDao = new ProfessorDao();
-	
 	@Override
 	public void execute() {
 		Scanner in = new Scanner(System.in);

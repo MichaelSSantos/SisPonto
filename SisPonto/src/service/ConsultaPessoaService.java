@@ -5,20 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import dao.AdministrativoDao;
-import dao.AlunoDao;
-import dao.Dao;
-import dao.ProfessorDao;
-import entity.Aluno;
-import entity.Funcionario;
 import entity.Pessoa;
-import entity.Professor;
 
 public class ConsultaPessoaService implements SisPontoService{
-	
-	private Dao<Aluno> alunoDao = new AlunoDao();
-	private Dao<Professor> professorDao = new ProfessorDao();
-	private Dao<Funcionario> administrativoDao = new AdministrativoDao();
 	
 	@Override
 	public void execute() {

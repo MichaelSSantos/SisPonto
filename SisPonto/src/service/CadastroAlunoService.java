@@ -2,15 +2,11 @@ package service;
 
 import java.util.Scanner;
 
-import dao.AlunoDao;
-import dao.Dao;
 import entity.Aluno;
 import entity.Curso;
 
 public class CadastroAlunoService implements SisPontoService{
 
-	private Dao<Aluno> alunoDao = new AlunoDao();
-	
 	@Override
 	public void execute() {
 		

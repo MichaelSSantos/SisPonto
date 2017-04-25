@@ -2,14 +2,10 @@ package service;
 
 import java.util.Scanner;
 
-import dao.AdministrativoDao;
-import dao.Dao;
 import entity.Funcionario;
 import exceptions.SalarioInvalidoException;
 
 public class CadastroAdministrativoService implements SisPontoService{
-	
-	private Dao<Funcionario> administrativoDao = new AdministrativoDao();
 	
 	@Override
 	public void execute() {
