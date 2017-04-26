@@ -7,6 +7,15 @@ import entity.Professor;
 
 public class ProfessorDao implements Dao<Professor> {
 
+	private static ProfessorDao uniqueInstance;
+
+	private ProfessorDao() {
+	}
+
+	public static ProfessorDao getDao() {
+		return (uniqueInstance == null) ? uniqueInstance = new ProfessorDao() : uniqueInstance;
+	}
+
 	private List<Professor> professores = new ArrayList<>();
 
 	@Override
@@ -18,5 +27,5 @@ public class ProfessorDao implements Dao<Professor> {
 	public List<Professor> obterTodos() {
 		return professores;
 	}
-	
+
 }
