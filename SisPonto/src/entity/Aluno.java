@@ -13,7 +13,7 @@ public class Aluno extends Pessoa {
 
 	@Override
 	public String toString() {
-		return super.toString() + ", Cursos: " + this.cursos;
+		return super.toString() + ", Cursos: " + this.cursos + "\n";
 	}
 
 	public List<Curso> getCursos() {

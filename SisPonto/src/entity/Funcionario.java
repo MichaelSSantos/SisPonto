@@ -6,7 +6,7 @@ public class Funcionario extends Pessoa{
 
 	@Override
 	public String toString() {
-		return super.toString() + ", Salário: " + salario;
+		return super.toString() + ", Salário: " + salario + "\n";
 	}
 
 	public Double getSalario() {

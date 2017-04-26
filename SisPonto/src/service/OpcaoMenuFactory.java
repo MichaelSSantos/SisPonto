@@ -1,8 +1,8 @@
 package service;
 
-public enum OpcaoMenu {
+public enum OpcaoMenuFactory {
 
-	SAIR{
+	SAIR {
 		@Override
 		public SisPontoService getService() {
 			return new EncerrarService();
@@ -34,5 +34,9 @@ public enum OpcaoMenu {
 	};
 
 	public abstract SisPontoService getService();
+
+	public static SisPontoService getInstance(String opcaoMenu) {
+		return OpcaoMenuFactory.values()[Integer.valueOf(opcaoMenu)].getService();
+	}
 
 }

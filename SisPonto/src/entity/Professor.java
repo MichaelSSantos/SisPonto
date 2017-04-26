@@ -14,7 +14,7 @@ public class Professor extends Funcionario {
 	@Override
 	public String toString() {
 		return "Nome: " + getNome() + ", CPF: " + getCpf() + ", Matricula: " + getMatricula() + 
-				", Cursos:"	+ this.cursos + ", \nSalário: " + getSalario();
+				", Cursos:"	+ this.cursos + ", \nSalário: " + getSalario() + "\n";
 	}
 
 	public List<Curso> getCursos() {

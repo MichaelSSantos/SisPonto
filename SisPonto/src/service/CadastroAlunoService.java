@@ -23,7 +23,7 @@ public class CadastroAlunoService extends BaseUtilsService implements SisPontoSe
 		System.out.print("-Informe o CPF: ");
 		aluno.setCpf(in.nextLine());
 		System.out.print("-Informe a matrícula: ");
-		aluno.setMatricula(in.nextLine());
+		aluno.setMatricula(in.nextLine().trim());
 
 		do {
 			System.out.print("\n-Selecione [1] para inserir um curso para o aluno ou \n selecione [0] para finalizar: ");

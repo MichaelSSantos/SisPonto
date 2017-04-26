@@ -23,7 +23,7 @@ public class CadastroAdministrativoService implements SisPontoService {
 		System.out.print("-Informe o CPF: ");
 		administrativo.setCpf(in.nextLine());
 		System.out.print("-Informe a matrícula: ");
-		administrativo.setMatricula(in.nextLine());
+		administrativo.setMatricula(in.nextLine().trim());
 		administrativo.setSalario(inserirSalario());
 
 		System.out.println("\n" + administrativo.toString());

@@ -23,7 +23,7 @@ public class CadastroProfessorService extends BaseUtilsService implements SisPon
 		System.out.print("-Informe o CPF: ");
 		professor.setCpf(in.nextLine());
 		System.out.print("-Informe a matrícula: ");
-		professor.setMatricula(in.nextLine());
+		professor.setMatricula(in.nextLine().trim());
 
 		do {
 			System.out.print("\n-Selecione [1] para inserir um curso para o aluno ou \n selecione [0] para finalizar: ");

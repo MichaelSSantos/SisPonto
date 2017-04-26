@@ -26,7 +26,7 @@ public class ConsultaPessoaService implements SisPontoService {
 
 		System.out.println("\n--Consulta de pessoa--");
 		System.out.print("-Informe a matrícula: ");
-		String matricula = in.nextLine();
+		String matricula = in.nextLine().trim();
 
 		List<Pessoa> pessoas = new ArrayList<Pessoa>();
 		
@@ -38,7 +38,7 @@ public class ConsultaPessoaService implements SisPontoService {
 				.filter(pessoa -> pessoa.getMatricula().equals(matricula))
 				.collect(Collectors.toList());
 
-		System.out.println("\n-Retorno do filtro : " + filtro);
+		System.out.println("\n-Retorno do filtro : \n" + filtro);
 	}
 
 }

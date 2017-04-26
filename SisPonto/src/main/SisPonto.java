@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-import service.OpcaoMenu;
+import service.OpcaoMenuFactory;
 import service.SisPontoService;
 
 public class SisPonto {
@@ -25,8 +25,7 @@ public class SisPonto {
 			opcaoMenu = in.nextLine();
 
 			try {
-				OpcaoMenu opcaoSelecionada = OpcaoMenu.values()[Integer.valueOf(opcaoMenu)];
-				SisPontoService service = opcaoSelecionada.getService();
+				SisPontoService service = OpcaoMenuFactory.getInstance(opcaoMenu);
 				service.execute();
 
 			} catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
