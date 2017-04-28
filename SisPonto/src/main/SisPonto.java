@@ -5,6 +5,13 @@ import java.util.Scanner;
 import service.OpcaoMenuFactory;
 import service.SisPontoService;
 
+/**
+ * SisPonto - Trabalho de conclusão de módulo - Tecnologia Java - Infnet
+ * https://github.com/MichaelSSantos/SisPonto
+ * 
+ * @author Michael Santos
+ *
+ */
 public class SisPonto {
 
 	public static void main(String[] args) {
